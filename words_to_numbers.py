@@ -30,6 +30,6 @@ def words_to_num(words):
     return total_value
 
 input1=input("Enter the string : ")
-print(words_to_num(input1))
+print(words_to_num(input1)) 
 
 
