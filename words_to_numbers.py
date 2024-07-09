@@ -33,5 +33,3 @@ input1=input("Enter the string : ")
 print(words_to_num(input1))
 
 
-# If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
-# Answer is : 6111
