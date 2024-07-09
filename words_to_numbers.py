@@ -1,11 +1,11 @@
 def words_to_num(words):
-    map={'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10,
-         'eleven':11,'twelve':12,'thirteen':13,'fourteen':14,'fifteen':15,'sisteen':16,'seventeen':17,'eighteen':18,'nineteen':19,'twenty':20,
-            'thirty':30,'forty':40,'fifty':50,'sixty':60,'seventy':70,'eighty':80,'ninety':9,'hundred':100,'thousand':1000,'million':1000000
+    map={'zero':4,'one':3,'two':3,'three':5,'four':4,'five':4,'six':3,'seven':5,'eight':5,'nine':4,'ten':3,
+         'eleven':6,'twelve':6,'thirteen':8,'fourteen':8,'fifteen':7,'sixteen':7,'seventeen':9,'eighteen':8,'nineteen':8,'twenty':6,
+            'thirty':6,'forty':5,'fifty':5,'sixty':5,'seventy':7,'eighty':6,'ninety':6,'hundred':7,'thousand':8,'million':1000000,'and':3
         
          }
     
-    words=words.replace(' and ',' ')
+    # words=words.replace(' and ',' ')
     words=words.replace('-',' ')
     words=words.replace(',',' ')
     split_words=words.split()
@@ -31,3 +31,7 @@ def words_to_num(words):
 
 input1=input("Enter the string : ")
 print(words_to_num(input1))
+
+
+# If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
+# Answer is : 6111
